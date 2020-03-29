@@ -12,7 +12,7 @@ She said this:
 
 > Because TCP has handshakes and UDP doesn't and handshakes spread COVID-19.
 
-And...my brain blew up, and I put together this RFC with some of my techy friends.
+And...my brain blew up, and I put together this RFC with one of my techy friends.
 
 Please enjoy it in one of these two manually updated places:
 * [traditional RFC txt](https://raw.githubusercontent.com/wt/rfc_tcp_without_handshaking/rendered_rfc/draft-tcp-without-handshake-latest.txt)
@@ -21,5 +21,5 @@ Please enjoy it in one of these two manually updated places:
 # Collaborators
 * Rachel Turkal - a partner whose support makes it possible for me to be the
   best person I can be
-* Richard Hay - A fantastic human that has always inspired me with his
-  knowledge of and drive to make better networking.
+* Richard Hay - a fantastic human that has always inspired me with his
+  knowledge of and drive to make better networking
