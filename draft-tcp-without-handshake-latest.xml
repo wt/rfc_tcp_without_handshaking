@@ -31,7 +31,18 @@
         <uri>https://ymatyt.com/</uri>
       </address>
     </author>
-    <author fullname="Richard Hay" initials="R." role="editor" surname="Hay"/>
+    <author fullname="Richard Hay" initials="R." role="editor" surname="Hay">
+      <organization>Google, Inc.</organization>
+      <address>
+        <postal>
+          <street>1600 Amphitheatre Pkwy</street>
+          <city>Mountain View</city>
+          <region>California</region>
+          <code>94043</code>
+          <country>United States of America</country>
+        </postal>
+      </address>
+    </author>
     <date year="2020" month="4" day="1"/>
     <area>Transport</area>
     <workgroup>Antiseptic Networking Task Force</workgroup>
