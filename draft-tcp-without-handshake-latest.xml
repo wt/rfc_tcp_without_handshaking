@@ -78,7 +78,7 @@
     </section>
     <section anchor="solution" numbered="true" toc="default">
       <name>Solution: Replace TCP</name>
-      <t>All implemntations of
+      <t>All implementations of
         <xref target="RFC0793" format="default">TCP</xref> must be replaced with
         <xref target="RFC0768" format="default">UDP</xref>.</t>
     </section>
