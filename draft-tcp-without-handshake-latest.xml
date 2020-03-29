@@ -42,8 +42,7 @@
           Given the current global COVID-19 pandemic of 2019, there is a need
           to be more careful to prevent the spread of pathogens. To that
           end, physical contact, like handshakes, must be avoided. So, the TCP
-          handshake<xref target="RFC0793">Section 3.4 of</xref>
-          must go!
+          handshake must go!
         </t>
     </abstract>
     <note>
@@ -99,7 +98,7 @@
       </section>
       <section>
         <name>QUIC</name>
-        <t>This isn't even a standard yet...c'mon.</t>
+        <t><xref target="QUIC"/> isn't even a standard yet...c'mon.</t>
       </section>
     </section>
   </middle>
