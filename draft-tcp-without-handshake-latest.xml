@@ -52,9 +52,9 @@
     <abstract>
         <t>
           Given the current global COVID-19 pandemic of 2019, there is a need
-          to be more careful to prevent the spread of pathogens. To that
-          end, physical contact, like handshakes, must be avoided. So, the TCP
-          handshake must go!
+          to be more careful to prevent the spread of contagious pathogens. To
+          that end, physical contact, like handshakes, must be avoided. So,
+          the TCP handshake must go!
         </t>
     </abstract>
   </front>
