@@ -102,6 +102,15 @@
       </section>
     </section>
     <section>
+      <name>IANA Considerations</name>
+      <t>
+        If this work is standardized, IANA is asked to find and obsolete all
+        TCP related RFCs. I know it may seem weird to have IANA do this, but
+        I don't wanna do that work, and I'd hate to give RFC editors any
+        more work.
+      </t>
+    </section>
+    <section>
       <name>A Note on COVID-19</name>
       <t>
         This RFC was inspired by the
