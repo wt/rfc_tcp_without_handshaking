@@ -75,6 +75,40 @@
         document are to be interpreted as described in <xref target="RFC2119" format="default">RFC 2119</xref>.</t>
       </section>
     </section>
+    <section>
+      <name>TCP Handshakes</name>
+      <t>The process of establishing a connection in TCP is called the
+        "three-way handshake" and is defined in
+        <xref target="RFC0793">section 3.4 of</xref>. At a high level, the
+        handshake process looks like this:</t>
+      <figure>
+        <name>TCP handshake</name>
+        <artwork><![CDATA[
+Client      Server
+  |            |
+  |----syn---->|
+  |            |
+  |<--syn/ack--|
+  |            |
+  |----ack---->|
+  |            |
+  |    ...     |
+        ]]></artwork>
+      </figure>
+      <t>The connection establishment synchronizes the sequence numbers and
+        other important connection parameters for each direction of the
+        connnection.</t>
+      <t>The TCP RFC was written before there was a commercial presence on
+        the Internet. Connections were being established (and dropped) long
+        before the fall of the Berlin Wall. In all that time, the handshake
+        has been serving without much scrutiny. In fact, many vendors have
+        even put their own unique spin on it. For example, Avaya used to
+        require two acks from a client. The client had to be double sure
+        they wanted to connect.</t>
+      <t>In this time of world pandemic, it is time to reconsider many things
+        we've taken for granted. TCP handshakes are but one thing we need
+        to reconsider.</t>
+    </section>
     <section anchor="solution" numbered="true" toc="default">
       <name>Solution: Replace TCP</name>
       <t>All implementations of
