@@ -50,26 +50,24 @@
     <keyword>tcp</keyword>
     <keyword>udp</keyword>
     <abstract>
-        <t>
-          Given the current global COVID-19 pandemic of 2019, there is a need
+        <t>Given the current global COVID-19 pandemic of 2019, there is a need
           to be more careful to prevent the spread of contagious pathogens. To
           that end, physical contact, like handshakes, must be avoided. So,
-          the TCP handshake must go!
-        </t>
+          the TCP handshake must go!</t>
     </abstract>
   </front>
 
   <middle>
     <section numbered="true" toc="default">
       <name>Introduction</name>
-      <t>
-        <xref target="RFC0793" format="default">Transmission Control Protocol (TCP)</xref>
+      <t><xref target="RFC0793" format="default">Transmission Control Protocol (TCP)</xref>
         is a very important transport layer protocol on the Internet. The
         process of establishing a TCP connection is called the "three-way
-        handshake." Handshaking requires physical contact. For viruses
-        like COVID-19, handshaking promotes more efficient spread. As such,
-        handshaking MUST be eliminated. It really is that simple.
-      </t>
+        handshake." This process is defined in
+        <xref target="RFC0793">section 3.4 of</xref>. Handshaking requires
+        physical contact. For viruses like COVID-19, handshaking promotes more
+        efficient spread. As such, handshaking MUST be eliminated. It really
+        is that simple.</t>
       <section numbered="true" toc="default">
         <name>Requirements Language</name>
         <t>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
@@ -104,23 +102,19 @@
     </section>
     <section>
       <name>IANA Considerations</name>
-      <t>
-        If this work is standardized, IANA is asked to find and obsolete all
+      <t>If this work is standardized, IANA is asked to find and obsolete all
         TCP related RFCs. I know it may seem weird to have IANA do this, but
         I don't wanna do that work, and I'd hate to give RFC editors any
-        more work.
-      </t>
+        more work.</t>
     </section>
     <section>
       <name>A Note on COVID-19</name>
-      <t>
-        This RFC was inspired by the
+      <t>This RFC was inspired by the
         <xref target="COVID-19">Novel Coronavirus 2019 pandemic</xref>. I'd
         like to take a moment to recognize that this disease is causing
         suffering for many people. Please take a moment to think about these
         people and anyone suffering such maladies in the future. Please
-        consider contributing to charaties helping such people.
-      </t>
+        consider contributing to charaties helping such people.</t>
     </section>
   </middle>
 
@@ -148,6 +142,5 @@
         </front>
       </reference>
     </references>
-
   </back>
 </rfc>
