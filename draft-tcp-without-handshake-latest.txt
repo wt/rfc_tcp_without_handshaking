@@ -1,0 +1,280 @@
+
+
+
+
+Antiseptic Networking Task Force                               W. Turkal
+Internet-Draft                                            R. Turkal, Ed.
+Obsoletes: 793, 1122, 3168, 6093,    You're More Amazing Than You Think!
+           6528 (if approved)                                     R. Hay
+Intended status: Informational                              Google, Inc.
+Expires: 3 October 2020                                     1 April 2020
+
+
+          TCP Without Handshakes to Avoid Contagious Pathogens
+                     draft-tcp_without_handshake-01
+
+Abstract
+
+   Given the current global COVID-19 pandemic of 2019, there is a need
+   to be more careful to prevent the spread of contagious pathogens.  To
+   that end, physical contact, like handshakes, must be avoided.  So,
+   the TCP handshake must go!
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on 3 October 2020.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents (https://trustee.ietf.org/
+   license-info) in effect on the date of publication of this document.
+   Please review these documents carefully, as they describe your rights
+   and restrictions with respect to this document.
+
+
+
+
+
+
+Turkal, et al.           Expires 3 October 2020                 [Page 1]
+
+Internet-Draft            TCP Without Hanshakes               April 2020
+
+
+Table of Contents
+
+   1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
+     1.1.  Requirements Language . . . . . . . . . . . . . . . . . .   2
+   2.  TCP Handshakes  . . . . . . . . . . . . . . . . . . . . . . .   2
+   3.  Solution: Replace TCP . . . . . . . . . . . . . . . . . . . .   3
+   4.  Rejected Options  . . . . . . . . . . . . . . . . . . . . . .   3
+     4.1.  TCP Fist Bump . . . . . . . . . . . . . . . . . . . . . .   3
+     4.2.  TCP Elbow Bump  . . . . . . . . . . . . . . . . . . . . .   3
+     4.3.  TCP Jazz Hands  . . . . . . . . . . . . . . . . . . . . .   3
+     4.4.  QUIC  . . . . . . . . . . . . . . . . . . . . . . . . . .   4
+   5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   4
+   6.  Existential Considerations  . . . . . . . . . . . . . . . . .   4
+   7.  Concerning Satellite Communications . . . . . . . . . . . . .   4
+   8.  A Note on COVID-19  . . . . . . . . . . . . . . . . . . . . .   4
+   9.  Normative References  . . . . . . . . . . . . . . . . . . . .   4
+   10. Informative References  . . . . . . . . . . . . . . . . . . .   5
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   5
+
+1.  Introduction
+
+   Transmission Control Protocol (TCP) [RFC0793] is a very important
+   transport layer protocol on the Internet.  The process of
+   establishing a TCP connection is called the "three-way handshake."
+   This process is defined in section 3.4 of [RFC0793].  Handshaking
+   requires physical contact.  For viruses like COVID-19, handshaking
+   promotes more efficient spread.  As such, handshaking MUST be
+   eliminated.  It really is that simple.
+
+1.1.  Requirements Language
+
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+   "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
+   document are to be interpreted as described in RFC 2119 [RFC2119].
+
+2.  TCP Handshakes
+
+   The process of establishing a connection in TCP is called the "three-
+   way handshake" and is defined in section 3.4 of [RFC0793].  At a high
+   level, the handshake process looks like this:
+
+
+
+
+
+
+
+
+
+
+
+Turkal, et al.           Expires 3 October 2020                 [Page 2]
+
+Internet-Draft            TCP Without Hanshakes               April 2020
+
+
+   Client      Server
+     |            |
+     |----syn---->|
+     |            |
+     |<--syn/ack--|
+     |            |
+     |----ack---->|
+     |            |
+     |    ...     |
+
+                          Figure 1: TCP handshake
+
+   The connection establishment synchronizes the sequence numbers and
+   other important connection parameters for each direction of the
+   connnection.
+
+   The TCP RFC was written before there was a commercial presence on the
+   Internet.  Connections were being established (and dropped) long
+   before the fall of the Berlin Wall.  In all that time, the handshake
+   has been serving without much scrutiny.  In fact, many vendors have
+   even put their own unique spin on it.  For example, Avaya used to
+   require two acks from a client.  The client had to be double sure
+   they wanted to connect.
+
+   In this time of world pandemic, it is time to reconsider many things
+   we've taken for granted.  TCP handshakes are but one thing we need to
+   reconsider.
+
+3.  Solution: Replace TCP
+
+   All implementations of TCP [RFC0793] must be replaced with UDP
+   [RFC0768].
+
+4.  Rejected Options
+
+4.1.  TCP Fist Bump
+
+   Still passes too many germs.
+
+4.2.  TCP Elbow Bump
+
+   Super awkward.
+
+4.3.  TCP Jazz Hands
+
+   You thought the elbow bump was awkward?
+
+
+
+
+
+Turkal, et al.           Expires 3 October 2020                 [Page 3]
+
+Internet-Draft            TCP Without Hanshakes               April 2020
+
+
+4.4.  QUIC
+
+   [QUIC] isn't even a standard yet...c'mon.
+
+5.  IANA Considerations
+
+   If this work is standardized, IANA is asked to find and obsolete all
+   TCP related RFCs.  I know it may seem weird to have IANA do this, but
+   I don't wanna do that work, and I'd hate to give RFC editors any more
+   work.
+
+6.  Existential Considerations
+
+   Without a handshake, "connections", sessions, sequence numbers, and
+   ACKs for every packet is TCP really TCP?  While sending large numbers
+   of max size datagrams in a single "connection" is the enemy of flow
+   based 5 tuple ECMP flow hashing (which cannot differentiate between
+   an 8k video stream and a ping), it is how traditional TCP has
+   operated for decades and how traditional RPCs between client and
+   server is transacted over a wide variety of networks worldwide
+   (wirelessa and wired).
+
+7.  Concerning Satellite Communications
+
+   So one advantage of dispensing with TCP handshakes is it eliminates
+   the need for satellite TCP accelerators.  Traditionally TCP
+   interprets latency as non delivery if it does not receive ACKs
+   without the window period.  Satellite comms are often so latent the
+   ACKs do not make it in time resulting in the transmission of a number
+   of duplicate packets.  Accelerators send fake ACKs to the sender and
+   suppresses ACKs from the receiver so the data flow is consistent.
+   Eliminating the ACKs and handshakes also eliminates the need for
+   accelerators.
+
+8.  A Note on COVID-19
+
+   This RFC was inspired by the Novel Coronavirus 2019 pandemic
+   [COVID-19].  I'd like to take a moment to recognize that this disease
+   is causing suffering for many people.  Please take a moment to think
+   about these people and anyone suffering such maladies in the future.
+   Please consider contributing to charities helping such people.
+
+9.  Normative References
+
+   [RFC0768]  Postel, J., "User Datagram Protocol", STD 6, RFC 768,
+              DOI 10.17487/RFC0768, August 1980,
+              <https://www.rfc-editor.org/info/rfc768>.
+
+
+
+
+Turkal, et al.           Expires 3 October 2020                 [Page 4]
+
+Internet-Draft            TCP Without Hanshakes               April 2020
+
+
+   [RFC0793]  Postel, J., "Transmission Control Protocol", STD 7,
+              RFC 793, DOI 10.17487/RFC0793, September 1981,
+              <https://www.rfc-editor.org/info/rfc793>.
+
+   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
+              Requirement Levels", BCP 14, RFC 2119,
+              DOI 10.17487/RFC2119, March 1997,
+              <https://www.rfc-editor.org/info/rfc2119>.
+
+10.  Informative References
+
+   [COVID-19] World Health Organization, "Coronavirus disease 2019",
+              <https://www.who.int/emergencies/diseases/novel-
+              coronavirus-2019>.
+
+   [QUIC]     Internet Engineering Task Force, "QUIC Working Group",
+              <https://datatracker.ietf.org/wg/quic/about/>.
+
+Authors' Addresses
+
+   Wren Turkal
+   You're More Amazing Than You Think!
+
+   Email: wt@penguintechs.org
+   URI:   https://ymatyt.com/
+
+
+   Rachel Turkal (editor)
+   You're More Amazing Than You Think!
+
+   URI:   https://ymatyt.com/
+
+
+   Richard Hay
+   Google, Inc.
+   1600 Amphitheatre Pkwy
+   Mountain View, California 94043
+   United States of America
+
+   Email: rhay@google.com
+
+
+
+
+
+
+
+
+
+
+
+Turkal, et al.           Expires 3 October 2020                 [Page 5]
