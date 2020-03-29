@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE rfc SYSTEM "rfc2629-xhtml.ent">
+<?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
+<rfc
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      category="info"
+      docName="draft-tcp_without_handshake-01"
+      ipr="trust200902"
+      obsoletes="793,1122,3168,6093,6528"
+      submissionType="independent"
+      xml:lang="en"
+      tocInclude="true"
+      tocDepth="4"
+      symRefs="true"
+      sortRefs="true"
+      version="3">
+
+  <front>
+    <title abbrev="TCP Antivirus">TCP Without Handshakes to Avoid Contact Transmitted Viruses</title>
+    <seriesInfo name="Internet-Draft" value="draft-tcp_without_handshake-01"/>
+    <author fullname="Wren Turkal" initials="W." surname="Turkal">
+      <organization>You're More Amazing Than You Think!</organization>
+      <address>
+        <email>wt@penguintechs.org</email>
+        <uri>https://ymatyt.com/</uri>
+      </address>
+    </author>
+    <author fullname="Rachel Turkal" initials="R." role="editor" surname="Turkal">
+      <organization>You're More Amazing Than You Think!</organization>
+      <address>
+        <uri>https://ymatyt.com/</uri>
+      </address>
+    </author>
+    <author fullname="Richard Hay" initials="R." role="editor" surname="Hay"/>
+    <date year="2020" month="4" day="1"/>
+    <area>Transport</area>
+    <workgroup>Antiseptic Networking Task Force</workgroup>
+    <keyword>tcp</keyword>
+    <keyword>udp</keyword>
+    <abstract>
+        <t>
+          Given the current global COVID-19 pandemic of 2019, there is a need
+          to be more careful to prevent the spread of pathogens. To that
+          end, physical contact, like handshakes, must be avoided. So, the TCP
+          handshake<xref target="RFC0793">Section 3.4 of</xref>
+          must go!
+        </t>
+    </abstract>
+    <note>
+      <t>
+        This RFC was inspired by the
+        <xref target="COVID-19">Novel Coronavirus 2019 pandemic</xref>. I'd
+        like to take a moment to recognize that this disease is causing
+        suffering for many people. Please take a moment to think about these
+        people and anyone suffering such maladies in the future. Please
+        consider contributing to charaties helping such people.
+      </t>
+    </note>
+  </front>
+
+  <middle>
+    <section numbered="true" toc="default">
+      <name>Introduction</name>
+      <t>
+        The original specification of
+        <xref target="RFC0793" format="default">Transmission Control Protocol (TCP)</xref>
+        is a very important transport layer protocol on the internet. The
+        process of establishing a tcp connection is called the "three-way
+        handshake." Handshaking requires physical contact. For viruses
+        like COVID-19, handshaking promotes more efficient spread. As such,
+        handshaking must be eliminated. It really is that simple.
+      </t>
+      <section numbered="true" toc="default">
+        <name>Requirements Language</name>
+        <t>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+        "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
+        document are to be interpreted as described in <xref target="RFC2119" format="default">RFC 2119</xref>.</t>
+      </section>
+    </section>
+    <section anchor="solution" numbered="true" toc="default">
+      <name>Solution: Replace TCP</name>
+      <t>All implemntations of
+        <xref target="RFC0793" format="default">TCP</xref> must be replaced with
+        <xref target="RFC0768" format="default">udp</xref>.</t>
+    </section>
+    <section>
+      <name>Rejected Options</name>
+      <section>
+        <name>TCP Fist Bump</name>
+        <t>Still passes too many germs.</t>
+      </section>
+      <section>
+        <name>TCP Elbow Bump</name>
+        <t>Super awkward.</t>
+      </section>
+      <section>
+        <name>TCP Jazz Hands</name>
+        <t>You thought the elbow bump was awkward?</t>
+      </section>
+      <section>
+        <name>QUIC</name>
+        <t>This isn't even a standard yet...c'mon.</t>
+      </section>
+    </section>
+  </middle>
+
+  <back>
+    <references title="Normative References">
+      <?rfc include="http://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.0768.xml"?>
+      <?rfc include="http://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.0793.xml"?>
+      <?rfc include="http://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml"?>
+    </references>
+    <references title="Informative References">
+      <reference anchor="COVID-19" target="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">
+        <front>
+          <title>Coronavirus disease 2019</title>
+          <author>
+            <organization>World Health Organization</organization>
+          </author>
+        </front>
+      </reference>
+      <reference anchor="QUIC" target="https://datatracker.ietf.org/wg/quic/about/">
+        <front>
+          <title>QUIC Working Group</title>
+          <author>
+            <organization>Internet Engineering Task Force</organization>
+          </author>
+        </front>
+      </reference>
+    </references>
+
+  </back>
+</rfc>
