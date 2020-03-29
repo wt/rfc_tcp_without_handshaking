@@ -142,6 +142,28 @@ Client      Server
         more work.</t>
     </section>
     <section>
+      <name>Existential Considerations</name>
+      <t>Without a handshake, "connections", sessions, sequence numbers, and ACKs
+          for every packet is TCP really TCP?  While sending large numbers of max
+          size datagrams in a single "connection" is the enemy of flow based 5 
+          tuple ECMP flow hashing (which cannot differentiate between an 8k video 
+          stream and a ping), it is how traditional TCP has operated for decades
+          and how traditional RPCs between client and server is transacted over
+          a wide variety of networks worldwide (wirelessa and wired).</t>
+    </section>
+    <section>
+      <name>Concerning Satellite Communications</name>
+      <t>So one advantage of dispensing with TCP handshakes is it eliminates the need
+          for satellite TCP accelerators.  Traditionally TCP interprets latency as 
+          non delivery if it does not receive ACKs without the window period.  Satellite
+          comms are often so latent the ACKs do not make it in time resulting in the
+          transmission of a number of duplicate packets.  Accelerators send fake ACKs 
+          to the sender and suppresses ACKs from the receiver so the data flow is
+          consistent.  Eliminating the ACKs and handshakes also eliminates the need 
+          for accelerators.</t>
+    </section>
+
+    <section>
       <name>A Note on COVID-19</name>
       <t>This RFC was inspired by the
         <xref target="COVID-19">Novel Coronavirus 2019 pandemic</xref>. I'd
