@@ -62,13 +62,12 @@
     <section numbered="true" toc="default">
       <name>Introduction</name>
       <t>
-        The original specification of
         <xref target="RFC0793" format="default">Transmission Control Protocol (TCP)</xref>
-        is a very important transport layer protocol on the internet. The
-        process of establishing a tcp connection is called the "three-way
+        is a very important transport layer protocol on the Internet. The
+        process of establishing a TCP connection is called the "three-way
         handshake." Handshaking requires physical contact. For viruses
         like COVID-19, handshaking promotes more efficient spread. As such,
-        handshaking must be eliminated. It really is that simple.
+        handshaking MUST be eliminated. It really is that simple.
       </t>
       <section numbered="true" toc="default">
         <name>Requirements Language</name>
@@ -81,7 +80,7 @@
       <name>Solution: Replace TCP</name>
       <t>All implemntations of
         <xref target="RFC0793" format="default">TCP</xref> must be replaced with
-        <xref target="RFC0768" format="default">udp</xref>.</t>
+        <xref target="RFC0768" format="default">UDP</xref>.</t>
     </section>
     <section>
       <name>Rejected Options</name>
