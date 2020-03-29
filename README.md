@@ -17,3 +17,9 @@ And...my brain blew up, and I put together this RFC with some of my techy friend
 Please enjoy it in one of these two manually updated places:
 * [traditional RFC txt](https://raw.githubusercontent.com/wt/rfc_tcp_without_handshaking/rendered_rfc/draft-tcp-without-handshake-latest.txt)
 * [html for all us textphobes](https://htmlpreview.github.io/?https://github.com/wt/rfc_tcp_without_handshaking/blob/rendered_rfc/draft-tcp-without-handshake-latest.html)
+
+# Collaborators
+* Rachel Turkal - a partner whose support makes it possible for me to be the
+  best person I can be
+* Richard Hay - A fantastic human that has always inspired me with his
+  knowledge of and drive to make better networking.
