@@ -22,4 +22,4 @@ Please enjoy it in one of these two manually updated places:
 * Rachel Turkal - a partner whose support makes it possible for me to be the
   best person I can be
 * Richard Hay - a fantastic human that has always inspired me with his
-  knowledge of and drive to make better networking
+  knowledge of and drive to make networking better
