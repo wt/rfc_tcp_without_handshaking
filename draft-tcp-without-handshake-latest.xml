@@ -45,16 +45,6 @@
           handshake must go!
         </t>
     </abstract>
-    <note>
-      <t>
-        This RFC was inspired by the
-        <xref target="COVID-19">Novel Coronavirus 2019 pandemic</xref>. I'd
-        like to take a moment to recognize that this disease is causing
-        suffering for many people. Please take a moment to think about these
-        people and anyone suffering such maladies in the future. Please
-        consider contributing to charaties helping such people.
-      </t>
-    </note>
   </front>
 
   <middle>
@@ -100,6 +90,17 @@
         <name>QUIC</name>
         <t><xref target="QUIC"/> isn't even a standard yet...c'mon.</t>
       </section>
+    </section>
+    <section>
+      <name>A Note on COVID-19</name>
+      <t>
+        This RFC was inspired by the
+        <xref target="COVID-19">Novel Coronavirus 2019 pandemic</xref>. I'd
+        like to take a moment to recognize that this disease is causing
+        suffering for many people. Please take a moment to think about these
+        people and anyone suffering such maladies in the future. Please
+        consider contributing to charaties helping such people.
+      </t>
     </section>
   </middle>
 
