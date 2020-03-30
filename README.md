@@ -4,7 +4,7 @@ Rachel, my beautiful and shockingly smart partner was sitting at her computer
 one day looking through her feed on Facebook. She looked up and seemed very
 delighted with herself when she told me this:
 
-> We should moved everything on TCP to UDP because of COVID-19.
+> We should move everything on TCP to UDP because of COVID-19.
 
 "What?" I said.
 
